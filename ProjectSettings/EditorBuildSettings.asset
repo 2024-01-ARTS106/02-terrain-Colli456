@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/PhysicsDemo.unity
+    guid: 165eab05e4dd5814f869590b67ab00e8
+  - enabled: 1
+    path: Assets/Scenes/LoseScreen.unity
+    guid: 00e2ef0e574885b43843c0ad3456dfe8
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 0db014d067d86be458a0052270d5cf96
   m_configObjects: {}
