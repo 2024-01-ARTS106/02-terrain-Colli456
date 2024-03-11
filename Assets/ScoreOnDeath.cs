@@ -7,7 +7,13 @@ public class ScoreOnDeath : MonoBehaviour
 
     public int amount;
 
-    void OnDestroy()
+    private void Awake()
+    {
+        var life = GetComponent<life>();
+        life.onDeath.AddListener(GivePoints);
+    }
+    
+    void GivePoints()
     {
         ScoreManager.instance.amount += amount;
     }

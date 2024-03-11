@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        EnemiesManager.instance.enemies.Add(this);
+        EnemiesManager.instance.AddEnemy(this);
     }
 
     // Update is called once per frame
@@ -19,6 +19,6 @@ public class Enemy : MonoBehaviour
 
     void OnDestroy()
     {
-        EnemiesManager.instance.enemies.Remove(this);
+        EnemiesManager.instance.RemoveEnemy(this);
     }
 }

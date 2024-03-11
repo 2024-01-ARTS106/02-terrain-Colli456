@@ -25,7 +25,7 @@ public class WaveSpawner : MonoBehaviour
 
     void EndSpawner()
     {
-        WavesManager.instance.waves.Remove(this);
+        WavesManager.instance.RemoveWave(this);
         CancelInvoke();
     }
 
